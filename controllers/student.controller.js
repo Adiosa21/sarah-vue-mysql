@@ -128,7 +128,7 @@ exports.delete_student = (req, res) => {
         });
     });
 }; 
-  //studeng count
+  //student count
   exports.count_students = (req,res)=>{
 
     Student.count({})
