@@ -2,6 +2,7 @@ module.exports = app => {
 
     // import student controller
     const students_logic = require("../controllers/student.controller.js");
+    //const studentsController = require('../controllers/studentsController');
 
     // import express router
     var router = require("express").Router();
@@ -12,6 +13,9 @@ module.exports = app => {
     // retrieve all students api route
     // http://localhost:8085/students/r
     router.get("/r", students_logic.retrieve_students);
+    
+    // count students api
+    router.get("/count",students_logic.count_students);
     
     // update students api route
     router.put("/:id", students_logic.update_student); 

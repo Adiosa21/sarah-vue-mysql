@@ -1,9 +1,10 @@
 module.exports = {
     HOST: "localhost",
-    USER: "sam",
-    PASSWORD: "Powell%1234",
-    DB: "school_a",
+    USER: "root",
+    PASSWORD: "",
+    DB: "Assignment-sarah",
     dialect: "mysql",
+    waitForConnections: true,
     pool: {
         // maximum number of connections to db pool
         max: 5,
